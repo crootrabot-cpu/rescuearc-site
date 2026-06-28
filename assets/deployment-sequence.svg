@@ -1,0 +1,31 @@
+<svg width="1600" height="1100" viewBox="0 0 1600 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1100" fill="#F8F6F1"/>
+  <rect x="110" y="180" width="400" height="700" rx="34" fill="#FFFFFF" stroke="#D9E0EA" stroke-width="6"/>
+  <rect x="600" y="180" width="400" height="700" rx="34" fill="#FFFFFF" stroke="#D9E0EA" stroke-width="6"/>
+  <rect x="1090" y="180" width="400" height="700" rx="34" fill="#FFFFFF" stroke="#D9E0EA" stroke-width="6"/>
+  <text x="156" y="250" fill="#153150" font-family="Inter, Arial" font-size="34" font-weight="700">1. Arm + throw</text>
+  <text x="646" y="250" fill="#153150" font-family="Inter, Arial" font-size="34" font-weight="700">2. Splash + trigger</text>
+  <text x="1136" y="250" fill="#153150" font-family="Inter, Arial" font-size="34" font-weight="700">3. Inflate + support</text>
+
+  <g fill="#F6B444" stroke="#153150" stroke-width="10">
+    <path d="M225 452C266 401 337 382 384 424C426 462 432 527 393 570C356 610 282 624 236 588C193 555 186 493 225 452Z"/>
+  </g>
+  <path d="M298 512C372 470 421 440 472 396" stroke="#153150" stroke-width="10" stroke-dasharray="18 18"/>
+  <path d="M472 396L432 400L455 367" stroke="#153150" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="162" y="735" fill="#536075" font-family="Inter, Arial" font-size="25">Football-like body launches farther and straighter than a ring.</text>
+
+  <ellipse cx="800" cy="575" rx="124" ry="82" fill="#66C7DD"/>
+  <circle cx="762" cy="560" r="52" fill="#F6B444" stroke="#153150" stroke-width="10"/>
+  <circle cx="846" cy="575" r="10" fill="#FFFFFF" opacity="0.75"/>
+  <circle cx="888" cy="542" r="8" fill="#FFFFFF" opacity="0.6"/>
+  <path d="M733 720C786 722 846 722 894 714" stroke="#153150" stroke-width="10" stroke-linecap="round"/>
+  <text x="650" y="735" fill="#536075" font-family="Inter, Arial" font-size="25">Water trigger or backup delay opens the deployment path.</text>
+
+  <circle cx="1274" cy="530" r="118" fill="#FFB72F" stroke="#153150" stroke-width="12"/>
+  <circle cx="1274" cy="530" r="68" fill="#F8F6F1"/>
+  <path d="M1180 670C1218 646 1253 632 1274 632C1298 632 1332 647 1372 670" stroke="#153150" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1170 728C1248 744 1307 744 1378 728" stroke="#153150" stroke-width="10" stroke-linecap="round"/>
+  <text x="1146" y="735" fill="#536075" font-family="Inter, Arial" font-size="25">Inflated geometry must be visible, grab-friendly, and not orientation-fussy.</text>
+
+  <text x="144" y="964" fill="#153150" font-family="Georgia, serif" font-size="44">The hard part is not “it inflates.” The hard part is reliable, safe, useful deployment.</text>
+</svg>
