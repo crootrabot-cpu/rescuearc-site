@@ -23,33 +23,33 @@ toggleButtons.forEach((button) => {
   });
 });
 
-const waitlistForm = document.querySelector('#waitlist-form');
-const waitlistEmail = document.querySelector('#waitlist-email');
-const waitlistMessage = document.querySelector('#waitlist-message');
+const interestForm = document.querySelector('#interest-form');
+const interestEmail = document.querySelector('#interest-email');
+const interestMessage = document.querySelector('#interest-message');
 
-function setWaitlistMessage(text, status) {
-  if (!waitlistMessage) return;
-  waitlistMessage.textContent = text;
-  waitlistMessage.dataset.status = status;
+function setInterestMessage(text, status) {
+  if (!interestMessage) return;
+  interestMessage.textContent = text;
+  interestMessage.dataset.status = status;
 }
 
-if (waitlistForm && waitlistEmail) {
-  waitlistForm.addEventListener('submit', (event) => {
+if (interestForm && interestEmail) {
+  interestForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    const value = waitlistEmail.value.trim();
+    const value = interestEmail.value.trim();
 
     if (!value) {
-      setWaitlistMessage('Enter your email address', 'error');
-      waitlistEmail.focus();
+      setInterestMessage('Enter your email address', 'error');
+      interestEmail.focus();
       return;
     }
 
-    if (!waitlistEmail.checkValidity()) {
-      setWaitlistMessage('Please enter a valid email address', 'error');
-      waitlistEmail.focus();
+    if (!interestEmail.checkValidity()) {
+      setInterestMessage('Please enter a valid email address', 'error');
+      interestEmail.focus();
       return;
     }
 
-    setWaitlistMessage('Prototype only — waitlist submission is not wired yet', 'info');
+    setInterestMessage('Prototype only — project updates are not wired to a backend yet', 'info');
   });
 }
