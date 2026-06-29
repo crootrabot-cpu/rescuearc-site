@@ -1,248 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0f2740">
-  <title>Life Launch — A better first move in water rescue.</title>
-  <meta name="description" content="Life Launch is a premium water-rescue concept site showing a faster first-throw system for lifeguard teams, marinas, resorts, and coastal operators.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="shell nav-row">
-      <a class="brand" href="#top">
-        <span class="brand-mark">Life Launch</span>
-        <span class="brand-subtitle">First-response water rescue concept</span>
-      </a>
-      <nav class="nav-links">
-        <a href="#story">Product</a>
-        <a href="#system">How it works</a>
-        <a href="#rescue-sequence">Rescue sequence</a>
-        <a href="#audience">Who it is for</a>
-        <a href="#status">Status</a>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Life Launch</title>
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  <link rel="icon" href="/favicon.ico" /></head>
 
-  <main id="top" class="app-shell">
-    <section class="hero shell">
-      <div class="hero-card">
-        <div class="hero-copy">
-          <p class="eyebrow">Premium water rescue concept</p>
-          <h1>Give the tower a faster first response.</h1>
-          <p class="lede">Life Launch is a throwable rescue device concept designed for elevated beach and waterfront positions. The case is simple: keep the unit mounted where the responder is already watching the water, make the first throw cleaner and quicker, and create flotation sooner while the rescue closes in.</p>
-          <div class="hero-signal-bar" aria-label="Primary concept signals">
-            <div class="signal-chip">
-              <span class="signal-label">Stage</span>
-              <strong>Chair-mounted</strong>
-            </div>
-            <div class="signal-chip">
-              <span class="signal-label">Release</span>
-              <strong>Overhand throw</strong>
-            </div>
-            <div class="signal-chip">
-              <span class="signal-label">Goal</span>
-              <strong>Faster flotation</strong>
-            </div>
-          </div>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#rescue-sequence">See the rescue flow</a>
-            <a class="btn btn-secondary" href="#status">Request updates</a>
-          </div>
-          <div class="proof-strip">
-            <div>
-              <span class="proof-kicker">01</span>
-              <strong>Throw-first response</strong>
-              <span>The first move is a real throwing motion, not an awkward buoy heave.</span>
-            </div>
-            <div>
-              <span class="proof-kicker">02</span>
-              <strong>Station-mounted access</strong>
-              <span>Units stay visible and ready at the chair so a responder can grab and release immediately.</span>
-            </div>
-            <div>
-              <span class="proof-kicker">03</span>
-              <strong>Serious equipment language</strong>
-              <span>Positioned like premium rescue hardware, not a gimmick or fake preorder toy.</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-stage panel">
-          <img src="./assets/life-launch/main-throw-hero.jpg" alt="Lifeguard in a quarterback-style throwing pose on a beach platform holding the Life Launch device, with additional units mounted beside the chair.">
-          <div class="hero-stage-stack">
-            <div class="hero-badge hero-badge--top">Mounted rack visible · backup units within reach · elevated first action</div>
-            <div class="hero-badge">The hero image now behaves like the app's proof screen: one glance shows tower position, throw posture, and repeated-attempt access.</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="story" class="section shell section-grid section-grid--story">
-      <div class="panel panel-soft story-copy">
-        <p class="eyebrow">Product read</p>
-        <h2>A compact rescue body designed to throw cleaner than legacy gear.</h2>
-        <p>The close-up makes the product legible fast: rescue-orange shell, black grip surfaces, directional body geometry, and stabilizing fins that give it a real marine-equipment feel.</p>
-        <p>That visual matters. If the object looks vague or toy-like, the whole concept collapses. Here it reads like a serious throwable device meant for range, control, and fast recognition.</p>
-        <div class="mini-spec-grid" aria-label="Product qualities">
-          <div>
-            <span class="mini-spec-label">Shape</span>
-            <strong>Directional body</strong>
-          </div>
-          <div>
-            <span class="mini-spec-label">Grip</span>
-            <strong>Black traction zones</strong>
-          </div>
-          <div>
-            <span class="mini-spec-label">Signal</span>
-            <strong>High-visibility orange</strong>
-          </div>
-        </div>
-        <ul class="feature-list">
-          <li>Compact enough to support a trained overhand release.</li>
-          <li>Bright enough to stay visible in a stressed water scene.</li>
-          <li>Purpose-built enough to feel like equipment, not a novelty object.</li>
-        </ul>
-      </div>
-      <div class="panel story-media">
-        <img src="./assets/life-launch/product-closeup.jpg" alt="Close-up of the Life Launch rescue device on wet shoreline sand with orange body, black grip panels, and fins.">
-      </div>
-    </section>
-
-    <section id="system" class="section shell section-grid">
-      <div class="panel panel-soft">
-        <p class="eyebrow">How the system works</p>
-        <h2>Mounted at the chair. Released in seconds. Repeated if needed.</h2>
-        <ol class="steps">
-          <li><strong>Stage it where the eyes already are:</strong> the unit lives at the elevated tower or platform where the responder is already scanning the water line.</li>
-          <li><strong>Grab and release without a setup dance:</strong> the device is intended to support a cleaner overhand throwing motion than bulky ring-based gear.</li>
-          <li><strong>Keep repeated attempts within reach:</strong> the rack matters because a missed first throw should not end the tool’s usefulness.</li>
-          <li><strong>Create flotation sooner:</strong> the target outcome is faster support in the water while the human rescue response keeps moving.</li>
-        </ol>
-      </div>
-      <div class="panel media-frame media-frame--tall">
-        <img src="./assets/life-launch/hero-system.png" alt="Mounted Life Launch system with multiple units attached to both sides of a raised lifeguard chair.">
-      </div>
-    </section>
-
-    <section id="rescue-sequence" class="section shell sequence-shell">
-      <div class="section-heading">
-        <p class="eyebrow">Rescue sequence</p>
-        <h2>Show the opening story in plain English.</h2>
-        <p>This is the pitch in one line of motion: a swimmer is in trouble, the lifeguard throws immediately, and flotation gets to the person before the full in-water rescue closes the gap.</p>
-      </div>
-      <div class="sequence-grid">
-        <article class="panel sequence-card sequence-card--alert">
-          <span class="sequence-step">01</span>
-          <p class="sequence-kicker">Man drowning</p>
-          <h3>Someone is actively struggling in the water.</h3>
-          <p>The problem is not abstract. A person is losing control, and every second before flotation arrives makes the rescue harder.</p>
-        </article>
-        <article class="panel sequence-card sequence-card--action">
-          <span class="sequence-step">02</span>
-          <p class="sequence-kicker">Lifeguard throws</p>
-          <h3>The responder makes the first move from the chair.</h3>
-          <p>Instead of wrestling with awkward ring gear, the lifeguard grabs Life Launch and throws in one fast overhand motion.</p>
-        </article>
-        <article class="panel sequence-card sequence-card--resolve">
-          <span class="sequence-step">03</span>
-          <p class="sequence-kicker">Man is saved</p>
-          <h3>Flotation reaches the victim sooner.</h3>
-          <p>The device buys time, stabilizes the person in distress, and supports the human rescue that finishes the save.</p>
-        </article>
-      </div>
-      <div class="panel sequence-visual-frame">
-        <img src="./assets/life-launch/support-state.png" alt="Person floating in open water supported by an orange inflatable rescue ring after the device reaches them.">
-        <div class="sequence-visual-caption">
-          <span class="proof-kicker">Support state</span>
-          <strong>The in-water proof beat stays visible.</strong>
-          <span>The page now explicitly shows the person in the water with flotation under them instead of leaving that outcome as text only.</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section shell architecture-grid">
-      <article class="panel panel-soft insight-card insight-card--dark">
-        <p class="eyebrow eyebrow-inverse">Why the concept has teeth</p>
-        <h2>It changes the opening sequence, not just the styling.</h2>
-        <p>Life Launch only earns its space if it improves the first thirty seconds: faster grab, cleaner release, repeatable throws from the station, and earlier support in the water.</p>
-      </article>
-      <article class="panel panel-soft insight-card">
-        <p class="eyebrow">Visual discipline</p>
-        <h2>Three strong images are enough.</h2>
-        <p>The page now stays focused on the best story beats: the throw, the product, and the mounted system. Less clutter, less repetition, better credibility.</p>
-      </article>
-    </section>
-
-    <section id="audience" class="section shell audience-shell">
-      <div class="section-heading section-heading--compact">
-        <p class="eyebrow">Who it is for</p>
-        <h2>Made for teams that own the first response moment.</h2>
-      </div>
-      <div class="audience-grid">
-        <article class="panel audience-card">
-          <p class="audience-kicker">Primary fit</p>
-          <h3>Lifeguard teams</h3>
-          <p>Guarded beaches and elevated stations where fast first contact can change the whole rescue sequence.</p>
-        </article>
-        <article class="panel audience-card">
-          <p class="audience-kicker">Operational fit</p>
-          <h3>Marinas and docks</h3>
-          <p>Waterfront properties that need visible rescue readiness without relying only on old awkward throw gear.</p>
-        </article>
-        <article class="panel audience-card">
-          <p class="audience-kicker">Hospitality fit</p>
-          <h3>Resorts and aquatic venues</h3>
-          <p>Premium guest-facing environments where safety hardware still needs to look intentional and high trust.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="status" class="section shell status-shell">
-      <div class="panel panel-soft status-card">
-        <div class="status-copy">
-          <div>
-            <p class="eyebrow">Current status</p>
-            <h2>Life Launch is still a concept-stage product surface.</h2>
-          </div>
-          <p>This page is meant to explain the operating idea clearly and professionally. It does not claim certification, field validation, or commercial availability. The site is polished on purpose, but the underlying proof still needs to be built.</p>
-          <div class="status-truth-grid">
-            <div>
-              <span class="mini-spec-label">What is real now</span>
-              <strong>Concept positioning, visual system, and operating story</strong>
-            </div>
-            <div>
-              <span class="mini-spec-label">What is not claimed</span>
-              <strong>No certification, preorder, or field-validated performance</strong>
-            </div>
-          </div>
-        </div>
-        <form id="interest-form" class="interest-form" novalidate>
-          <label for="interest-email">Email address</label>
-          <div class="interest-row">
-            <input id="interest-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@company.com" aria-describedby="interest-message">
-            <button class="btn btn-primary" type="submit">Request project updates</button>
-          </div>
-          <p class="interest-helper">No checkout, no deposit, no fake preorder flow.</p>
-          <p id="interest-message" class="interest-message" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer shell">
-    <p>Life Launch — concept-stage rescue hardware for elevated beach and waterfront response positions.</p>
-  </footer>
-
-  <div class="mobile-action-rail" aria-label="Primary mobile actions">
-    <a class="mobile-action mobile-action--secondary" href="#system">How it works</a>
-    <a class="mobile-action mobile-action--primary" href="#status">Request updates</a>
-  </div>
-
-  <script src="./assets/app.js"></script>
+  <body>
+    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <!-- The root element for your Expo app. -->
+    <div id="root"></div>
+  <script src="/_expo/static/js/web/index-3227e199da9b4a45bade9489852d0722.js" defer></script>
 </body>
 </html>
