@@ -335,6 +335,63 @@ figcaption {
   padding: 0 4px 4px;
 }
 
+.sequence-shell {
+  padding-top: 8px;
+}
+
+.sequence-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.sequence-card {
+  position: relative;
+  padding: 26px;
+  min-height: 280px;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.sequence-card h3,
+.sequence-card p {
+  margin: 0;
+}
+
+.sequence-step {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.95rem;
+  background: rgba(255,255,255,0.78);
+  border: 1px solid rgba(17, 39, 63, 0.10);
+  color: var(--navy-deep);
+}
+
+.sequence-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.74rem;
+  color: #6b7686;
+}
+
+.sequence-card--alert {
+  background: linear-gradient(180deg, rgba(255, 250, 247, 0.96), rgba(251, 236, 228, 0.92));
+}
+
+.sequence-card--action {
+  background: linear-gradient(180deg, rgba(246, 250, 255, 0.98), rgba(228, 239, 249, 0.94));
+}
+
+.sequence-card--resolve {
+  background: linear-gradient(180deg, rgba(248, 252, 247, 0.98), rgba(231, 243, 232, 0.94));
+}
+
 .architecture-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -442,7 +499,8 @@ input[type="email"] {
   .section-grid,
   .architecture-grid,
   .split-showcase,
-  .audience-grid {
+  .audience-grid,
+  .sequence-grid {
     grid-template-columns: 1fr;
   }
 
